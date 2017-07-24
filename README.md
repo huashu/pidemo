@@ -9,7 +9,7 @@ An object recognition application using [Google's TensorFlow Object Detection AP
 - [OpenCV 3.1](http://opencv.org/)
 
 ## Installation
-0) Always good practice to update everything before you install stuff:
+0) Update everything first:
 ```
 sudo apt-get update
 sudo apt-get upgrade
@@ -24,11 +24,17 @@ sudo apt-get install python-pip python-dev
 
 2) Install Tensorflow using pip
 ```
-
 pip install tensorflow
 ```
 3) Install pre-complied OpenCV 3.1.0 following the instructions [here](https://github.com/jabelone/OpenCV-for-Pi).
 
+4) Verify that you can import tensorflow, cv2 and picamera in Python without error
+```
+python
+> import tensorflow
+> import cv2
+> import picamera
+```
 ## Getting Started
 `python single_thread_detect_objects_from_camera.py`
 
